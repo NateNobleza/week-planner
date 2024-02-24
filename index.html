@@ -36,10 +36,19 @@
       </div>
       <div class="row">
         <div class="button">
-          <button>Add New Event</button>
+          <button class="new-event-Btn">Add New Event</button>
+          <!-- <dialog>
+            <label for="time">Time of Event:</label> <br>
+            <select name="time" id="time-of-event">
+              <option value="Choose">Choose a Time</option>
+              <option value="0400">0400</option>
+              <option value="0500">0500</option>
+              <option value="0600">0600</option>
+            </select>
+          </dialog> -->
         </div>
       </div>
-      <div class="hi">
+      <div class="table-container">
         <div class="table">
           <table>
             <thead>
@@ -103,8 +112,34 @@
             </tbody>
           </table>
         </div>
+        <div class="context">
+          <p>2023 Weekly Planner Inc</p>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
+    <!-- <dialog> -->
+    <label for="time">Time of Event:</label> <br />
+    <select name="time" id="time-of-event">
+      <option value="Choose">Choose a Time</option>
+      <option value="0400">0400</option>
+      <option value="0500">0500</option>
+      <option value="0600">0600</option>
+    </select>
+    <br />
+    <label for="day">Day of the week:</label> <br />
+    <select name="choose-day" id="choose-day">
+      <option value="choose-day">Choose a Day</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+    </select>
+    <br />
+    <label for="text">Event Information:</label> <br />
+    <textarea name="text" id="event-info" cols="30" rows="10"></textarea>
+    <div class="btn-container">
+      <button class="cancel">Cancel</button>
+      <button class="confirm">Confirm</button>
+    </div>
+    <!-- </dialog> -->
   </body>
 </html>
